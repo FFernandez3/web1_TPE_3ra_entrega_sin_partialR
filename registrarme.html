@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registrarme - Kimchi para dos</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nombrePagina"><span class="coreano"> 김치 </span> para dos</h1>
+        <a id="btn_menu">menu</a>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="recomendados.html">Recomendados</a></li>
+            <li> <a href="registrarme.html" target="_blanck">Registrarme</a></li>
+        </ul>
+    </nav>
+
+    <form class="formulario">
+        <label for="">Nombre</label>
+        <input class="inputRegistrarme" type="text" name="nombre" value="" required />
+        <label for="">Apellido</label>
+        <input class="inputRegistrarme" type="text" name="apellido" value="" />
+        <label for="">Email</label>
+        <input class="inputRegistrarme" type="email" name="email" value="" required />
+        <label for="">Mensaje</label>
+        <textarea class="textArea" name="mensaje" id="" cols="30" rows="10"></textarea>
+        <div class="captcha">
+            <h2>Captcha</h2>
+            <p class="indicaciones">Ingresa el número que aparece a continuación</p>
+            <div id="aleatorio"></div>
+            <div class="numeroIngresado">
+                <input class="inputForm" id="resultadoUsuario" type="number" name="number" value=""
+                    placeholder="Ingrese captcha" required>
+                <button class="button" id="comprobar">Chequea</button>
+                <button class="button" id="nuevoCaptcha">Recargá</button>
+            </div>
+            <div id="resultado">Resultado</div>
+            <button class="buttonEnviar" id="enviar" type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <footer>
+        <p class="copyright">Kimchi para dos 2022 | All rigths reserved | This is a fan site and makes no profit of the
+            usage of any
+            images or logos.
+        </p>
+        <div class="redes">
+            <a href=https://es-la.facebook.com/ target="_blank"><img src="img/facebook.png" alt="icono Facebook"></a>
+            <a href=https://www.instagram.com target="_blank"> <img src="img/instagram.jpg" alt="icono instagram"></a>
+        </div>
+    </footer>
+    <script src="js/captcha.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

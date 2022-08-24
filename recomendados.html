@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendados - Kimchi para dos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombrePagina"><span class="coreano"> 김치 </span> para dos</h1>
+        <a id="btn_menu">menu</a>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recomendados.html">Recomendados</a></li>
+            <li><a href="registrarme.html" target="_blanck">Registrarme</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="nombreSeccion">Dramas recomendados</h1>
+        <div id="divErrores"></div>
+        <div id="resultadoEliminarEditar"></div>
+        <table id="tabla">
+            <thead class="encabezado">
+                <tr>
+                    <td>Género</td>
+                    <td>Titulo</td>
+                    <td>Año</td>
+                    <td>Capitulos</td>
+                    <td>Estado</td>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+
+            </tbody>
+        </table>
+
+        <form class="formTabla" action="">
+            <div class="inputsTabla">
+                <input name="genero" type="text" placeholder="Genero" required>
+                <input name="titulo" type="text" placeholder="Titulo" required>
+                <input name="año" type="number" placeholder="Año" required>
+                <input name="capitulos" type="number" placeholder="Capitulos" required>
+                <input name="estado" type="text" placeholder="Estado" required>
+            </div>
+            <div class="btns-tabla">
+                <button class="button" id="btn-agregar">Agregar</button>
+                <button class="button" id="btn-agregar3">Agregar 3</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="copyright">Kimchi para dos 2022 | All rigths reserved | This is a fan site and makes no profit of the
+            usage of any
+            images or logos.
+        </p>
+        <div class="redes">
+            <a href=https://es-la.facebook.com/ target="_blank"><img src="img/facebook.png" alt="icono Facebook"></a>
+            <a href=https://www.instagram.com target="_blank"> <img src="img/instagram.jpg" alt="icono instagram"></a>
+        </div>
+    </footer>
+    <script src="js/tablaDinamica.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

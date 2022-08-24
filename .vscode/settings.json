@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5502,
+    "git.autoRepositoryDetection": false,
+    "git.autorefresh": false,
+    "git.allowForcePush": false,
+    "git.enabled": false
+}
